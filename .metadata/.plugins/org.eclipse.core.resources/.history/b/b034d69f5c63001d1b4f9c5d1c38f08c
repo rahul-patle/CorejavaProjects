@@ -1,0 +1,15 @@
+
+public class A {
+
+	static A a= new A(); 
+	A(){	
+	}
+	public void  m1 () {
+		System.out.println("in ma1");
+	}
+	
+	static A getobject() {
+		return a;
+		
+	}
+}

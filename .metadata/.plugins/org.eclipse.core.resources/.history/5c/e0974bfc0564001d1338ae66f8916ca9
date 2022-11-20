@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		int productId;
+		String productName;
+		int quantity;
+		
+		System.out.println("methioned the size of array ?");
+		Scanner scanner = new Scanner(System.in);
+
+		int size = scanner.nextInt();
+		Product [] product = new Product[size];
+		
+		for(int i=0;i<=size ;i++) {
+			 size = scanner.nextInt();
+			
+		}
+		
+		
+		
+
+	}
+	
+}

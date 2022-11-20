@@ -1,0 +1,23 @@
+
+public class Dog extends Animal  {
+
+	Dog (){
+		//super();
+	}
+	public void animal() {
+		System.out.println("animal is a dog");
+	}
+	 
+	public Object bark () {
+		super.animal();
+		System.out.println("barking dog");
+		return new Animal();
+	}
+	
+	public static void main(String[] args) {
+		Animal a = new Dog();
+		a.animal();
+		Dog an = new Dog();
+		an.bark();
+	}
+}

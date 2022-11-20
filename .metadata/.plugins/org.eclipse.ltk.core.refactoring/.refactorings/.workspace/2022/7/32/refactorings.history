@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;OutOfBox&apos;" deleteContents="false" description="Delete resource &apos;OutOfBox&apos;" element1="/OutOfBox" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1659264312102"/>&#x0A;<refactoring comment="Rename resource &apos;Ownprograms&apos; to &apos;wownprograms&apos;" description="Rename resource &apos;Ownprograms&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Ownprograms" name="wownprograms" stamp="1659284578182" updateReferences="true"/>
+</session>

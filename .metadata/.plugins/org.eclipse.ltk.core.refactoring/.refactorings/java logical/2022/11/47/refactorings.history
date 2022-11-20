@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java logical/src/LogicalPrograms-main&apos; to &apos;Logical&apos;" description="Rename resource &apos;LogicalPrograms-main&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/LogicalPrograms-main" name="Logical" stamp="1668493406988" updateReferences="true"/>
+</session>

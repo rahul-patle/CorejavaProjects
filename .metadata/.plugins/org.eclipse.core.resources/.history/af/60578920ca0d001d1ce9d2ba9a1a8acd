@@ -1,0 +1,25 @@
+package Pack2707.basicsex2;
+
+public class VariableArgumentsPattern {
+
+	public static void addition (int...a) {
+		int sum =0;
+		int sub =0;
+		
+		for (int element : a) {   //a [10][20][30]
+			                      // sum=60
+			
+			sum= sum+element;
+			
+			
+			
+		}System.out.println(sum);
+	}public static void main(String[] args) {
+		addition(10,20,30);
+		addition(20,40);
+		addition (20,40,60,20);
+	//	we can call by classname as well
+	}
+
+	
+}

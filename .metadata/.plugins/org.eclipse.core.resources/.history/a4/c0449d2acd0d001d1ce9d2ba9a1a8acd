@@ -1,0 +1,13 @@
+package Pack2707.basicsex2;
+
+public class SubstractionByVariableArgu {
+
+	public  void sub(int...a) {
+		int substraction =0;
+		for(int number :a) {
+	// we read it as (integer number for a)
+			substraction =substraction+number;
+		}System.out.println(substraction);
+		
+	}
+}

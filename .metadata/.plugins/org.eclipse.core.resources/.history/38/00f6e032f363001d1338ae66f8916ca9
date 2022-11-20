@@ -1,0 +1,10 @@
+
+public class Dog extends Animal  {
+
+	public Object bark () {
+		super.animal();
+		System.out.println("animal ");
+		return new Animal();
+	}
+	
+}

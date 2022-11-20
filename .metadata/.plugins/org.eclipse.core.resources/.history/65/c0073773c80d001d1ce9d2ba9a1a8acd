@@ -1,0 +1,27 @@
+package Pack2707.basicsex2;
+//5//
+
+public class CustomerTest{
+
+	public static void main(String[] args) {
+		
+		Customer customer=new Customer();
+	
+// here we are printing variables  without assigning values
+	// gives output 0,null;
+		System.out.println(customer.o);
+		System.out.println(customer.cid);
+
+		customer.cid=1;
+		customer.customerName="jatin";
+		customer.o=new Order(1,30,"pen");
+ // here we are assigning value to each variable	
+		
+		customer.show();
+// This will gives pattern as written in method
+		
+		System.out.println(customer.toString());
+		System.out.println(customer); // both are same
+// it gives content as it is like written in a toString() method<======		
+	}
+}

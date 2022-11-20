@@ -1,0 +1,19 @@
+
+public class AmstongNumber {
+
+	public static void main(String[] args) {
+		int  rem=0;
+		int no =121;
+		int temp = no;
+		// remainder of the temp number
+			temp = temp%10;
+		// divide remainder	
+			temp=temp/10;
+	//	153 = 1+125+27;
+			
+			
+			
+		
+	}
+
+}

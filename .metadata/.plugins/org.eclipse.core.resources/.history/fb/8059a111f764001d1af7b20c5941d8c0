@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class AutomorphicNumber {
+
+	public static void main(String[] args) {
+		System.out.println("enter the number ?");
+		
+		int no =5;
+		int	m = no*no;  
+		int number = no; // 
+		int temp = 1;		//
+		while (number > 0) {
+				
+			number = number/10;
+			temp = temp*10;
+			System.out.println(temp);
+		}
+		
+		 m = m % temp;
+		 System.out.println(m);
+		 if(no == m) {
+			 System.out.println(" number is AutomorphicNumber");
+		 }else {
+			 System.out.println("number is not AutomorphicNumber");
+		 }
+		
+	}
+}

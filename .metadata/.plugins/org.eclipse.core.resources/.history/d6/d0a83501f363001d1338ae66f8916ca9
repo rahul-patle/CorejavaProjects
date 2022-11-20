@@ -1,0 +1,9 @@
+
+public class AnimalTest extends Animal  {
+
+	public Object method () {
+		return new Animal();
+		
+	}
+	
+}

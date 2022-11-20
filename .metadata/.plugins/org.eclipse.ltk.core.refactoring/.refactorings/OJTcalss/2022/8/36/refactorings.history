@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OJTcalss/src/com/kiranacademy/ExceptionHandling/folder&apos; to &apos;Parallelprograming&apos;" description="Rename resource &apos;folder&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kiranacademy/ExceptionHandling/folder" name="Parallelprograming" stamp="1661954304537" updateReferences="true"/>
+</session>

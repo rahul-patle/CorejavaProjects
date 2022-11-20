@@ -1,0 +1,100 @@
+package com.kiranacademy.Array.assignment;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArrayExample7 {
+	
+	public static void main(String[] args) {
+	
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("How many objects you want to store ?  ");
+		int size=scanner.nextInt();
+		
+		Student[] students= new Student[size];
+						                              //            0     1     2
+		System.out.println(Arrays.toString(students));// students [null][null][null]
+				
+		//System.out.println(students[0].marks);
+		
+		int rno,marks;
+		String subject;
+		
+		for(int index=0;index<students.length;index++)
+		{
+			System.out.println("Enter rno , subject , marks :-  ");
+			rno=scanner.nextInt();//3
+			subject=scanner.next();
+			marks=scanner.nextInt();//70
+		
+			students[index]=new Student(rno,marks);// creating object and then storing it in an array at particular index
+			
+		}
+		
+		//(1,90) (2,95) (3,98)
+		
+		int min=Integer.MAX_VALUE;
+		
+		Student minStudent=null;
+		
+		for(Student student:students)
+		{
+			if(student.subject.equals("java") && student.marks<min)
+			{
+				min=student.marks;
+				minStudent=student;
+			}
+				
+		}
+		
+		System.out.println(minStudent);
+	}}	
+		
+		//System.out.println(10<2 && "java".charAt(4)=='a'); <== dead code
+//System.out.println(10<2 & "java".charAt(4)=='a');<== index out of bound
+		
+		
+		
+		/* Find out topper student */
+		
+//		
+//		int max=0;//2
+//		rno=0;//2
+//		Student maxStudent=null;
+//		
+//		for(Student student : students)
+//		{
+//			if(rno!=student.rno)
+//		     {
+//				rno=student.rno;
+//				int total=totalMarks(students,student.rno);
+//			
+//				if( total > max)
+//				{
+//					max=total;//170
+//					maxStudent=student;
+//				}	
+//			}
+//			
+//		}// for loop
+//		
+//		
+//		System.out.println(maxStudent.rno + " is having highest total " + max);
+//		
+//	}// main ends
+//	/* function to calculate total marks */
+//	// totalMarks(students,1)
+//	static int totalMarks(Student[] students, int rno) {
+//		
+//		int sum=0;
+//		
+//		for(Student student : students)
+//		{
+//			if(student.rno==rno)
+//				sum = sum + student.marks;
+//		}
+//		
+//		return sum;
+//	}
+//	
+//}//class ends

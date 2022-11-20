@@ -1,0 +1,31 @@
+
+package Logical;
+import java.util.Scanner;
+
+public class ArmStrongNum {
+	// 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153..cubes of all single character and their addition would be same number
+	// 370,371,407 few three digit ArmStrongNumbers.
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+		System.out.println("Enter the Number : ");
+		int no=scanner.nextInt();
+		int temp=no;
+		int rem=0;
+		int rev=0;
+		
+		while(temp != 0) {
+			rem=temp%10; //(3 5 1) remainder...
+			System.out.println("rem " + rem);
+			temp=temp/10;//...it will give 2 times true and returns false and loop will terminate
+			System.out.println("temp " + temp);
+			rev=rev + (rem*rem*rem);//If in order to check single value Armstrong number we have to just give (rem),
+			//If we have to check for 4 digit Armstrong number then (rem*rem*rem*rem)
+		}
+		System.out.println(rev);
+		if (rev==no) {
+			System.out.println("Number is Armstrong Number ");
+		} else {
+			System.err.println("Number is Not a Armstrong Number ");
+		}
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;wownprograms/src/wownprograms/costrctorandmethodcalling&apos; to &apos;costrctoradsettergetter&apos;" description="Rename resource &apos;costrctorandmethodcalling&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/wownprograms/costrctorandmethodcalling" name="costrctoradsettergetter" stamp="1659286223426" updateReferences="true"/>
+</session>

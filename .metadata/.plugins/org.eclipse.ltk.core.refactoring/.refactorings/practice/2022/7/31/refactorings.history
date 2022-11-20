@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;practice/src/folder&apos; to &apos;bymyself&apos;" description="Rename resource &apos;folder&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/folder" name="bymyself" stamp="1658846706537" updateReferences="true"/>
+</session>

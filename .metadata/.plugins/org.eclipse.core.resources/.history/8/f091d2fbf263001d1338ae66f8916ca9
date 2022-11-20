@@ -1,0 +1,9 @@
+
+public class AnimalTest {
+
+	public Object method () {
+		return new Animal();
+		
+	}
+	
+}

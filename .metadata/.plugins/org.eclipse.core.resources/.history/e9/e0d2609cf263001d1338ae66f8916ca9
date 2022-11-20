@@ -1,0 +1,25 @@
+
+public class Animal {
+
+	Animal(){
+		
+	}
+	public void animal() {
+		System.out.println("animal can walk ");
+	}
+	public static void main(String[] args) {
+		Animal a = new Dog();
+		a.animal();
+		
+		
+	}
+}
+ class Dog extends Animal {
+	 
+	  public void bark() {
+	System.out.println("dog can bark");
+	super.animal();
+	  }
+	 
+ }
+ 

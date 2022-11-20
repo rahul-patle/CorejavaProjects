@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OJTcalss/src/com/kiranacademy/Collection/jdk8ex&apos; to &apos;LamdaExpression&apos;" description="Rename resource &apos;jdk8ex&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kiranacademy/Collection/jdk8ex" name="LamdaExpression" stamp="1660748956611" updateReferences="true"/>
+</session>

@@ -1,0 +1,33 @@
+package Logical;
+
+import java.util.Scanner;
+
+public class AutomorphicNumber {
+
+	public static void main(String[] args) {
+
+		//AutomorphicNumber => E.g. 5² = 25, 6² = 36, 76² =5776, etc.
+		//Here you can see last digit of each sqaure and that number is same and thus it is an Automorphic Number
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number :- ");
+		int num = sc.nextInt();
+
+		int m = num * num, number = num, temp = 1;
+
+		while (number > 0) {
+			number = number / 10;
+			temp = temp * 10;
+			System.out.println(temp);
+		}
+		m = m % temp; 
+		if (num == m) {
+			System.out.println(num + " is a Automorphic Number");
+		} else {
+			System.out.println(num + " is not a Automorphic Number");
+		} 
+	}
+}
+//5
+//1st => 5/10=0.5,
+//2nd => 10=>temp
+//3rd => 0.5 * 10 = 5....Output

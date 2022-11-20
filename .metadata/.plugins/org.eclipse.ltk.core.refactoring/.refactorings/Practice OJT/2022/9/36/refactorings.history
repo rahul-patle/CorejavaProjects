@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Practice OJT/src/ENUMS&apos; to &apos;Enums&apos;" description="Rename resource &apos;ENUMS&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ENUMS" name="Enums" stamp="1662051468495" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Practice OJT/src/Enums/Language.java&apos; to &apos;EnumExample.java&apos;" description="Rename resource &apos;Language.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Enums/Language.java" name="EnumExample.java" stamp="1662051793921" updateReferences="true"/>
+</session>

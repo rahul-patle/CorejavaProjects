@@ -1,0 +1,25 @@
+
+public class Dog {
+	Dog (){
+		System.out.println("dog");
+	}
+	public void animal() {
+		System.out.println("animal is a dog");
+	}
+//	public Object bark () {
+//		//super.animal(); //1
+//		System.out.println("barking dog");
+//		return new Animal(); //2
+//	}
+	public void bark1() {
+		System.out.println("barking dog");
+		//super.animal();
+	//2
+	}
+	public static void main(String[] args) {
+		Animal a = new Animal(); // default constructor always get called at run time
+	    a.animal();
+		Dog an = new Dog();
+		an.bark1();
+	}
+}

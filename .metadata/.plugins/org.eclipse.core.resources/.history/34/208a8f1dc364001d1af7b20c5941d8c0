@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class AutomorphicNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		int no= scanner.nextInt();
+		int	number = no* no;
+		int temp = 1;
+		
+		
+	}
+}

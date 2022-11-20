@@ -1,0 +1,23 @@
+
+public class AmstongNumber {
+
+	public static void main(String[] args) {
+		int  rem=0;
+		int no =153;
+		int temp = no;
+		int rev =0;
+	// remainder of the temp number
+			temp = temp%10;
+			System.out.println(temp);
+	// divide remainder	
+			temp=temp/10;
+			System.out.println(temp);
+	//	153 = 1+125+27;
+			rev = rev +(rem*rem*rem);
+		if(rev==no) {
+			System.out.println( no +": number is amstrong number");
+		}else {
+			System.out.println( no + " : number is not amstrong");
+		}
+	}
+}

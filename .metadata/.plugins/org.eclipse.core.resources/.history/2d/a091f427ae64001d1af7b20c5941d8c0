@@ -1,0 +1,24 @@
+package com.ankush.Logical;
+
+public class MissingElementEx {
+
+	public static void main(String[] args) {
+
+		int a[] = { 1, 3, 5, 8, 12 };
+
+		// if we wont do a.length-1 then it will give ArrayOutofBoundException
+		for (int i = 0; i < a.length - 1; i++) {
+			int sum = a[i] + 1;
+			System.err.println(sum);
+			// for loop is used when itteration are known
+			// while loop is used when itteration are unknown it will go on itterate untill
+			// condition became false
+			while (sum < a[i + 1]) {
+				System.out.println(sum + " ");
+				sum = sum + 1;
+				// here if we wont write sum=sum+1, then sum=2 then condition will be true
+				// always then loop wont get terminate and it will print 2 unlimited times
+			}
+		}
+	}
+}

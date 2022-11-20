@@ -1,0 +1,65 @@
+package com.Grocery.Controller;
+
+import javax.persistence.Entity;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Grocery.Entity.Grocery;
+
+
+@RestController
+@RequestMapping("api")
+public class Controller  {
+
+	@Autowired
+	SessionFactory factory;
+		Grocery grocery;
+
+	@GetMapping("getgrocery")
+	Grocery getgrocery() {
+		Session session = factory.openSession();
+		Grocery grocery = session.load(Grocery.class, 2);
+		System.out.println(grocery);
+		return grocery;
+	}
+	
+	@PostMapping("postgrocery")
+	public void postgrocery(@RequestBody Grocery grocery) {
+		Session session = factory.openSession();
+		Transaction transaction = session.beginTransaction();
+		session.save(grocery);
+		transaction.commit();
+		System.out.println(grocery);
+			
+	}
+
+	@PutMapping("putgrocery")
+	public void Putgrocery(@RequestBody Grocery grocery) {
+		Session session = factory.openSession();
+		Transaction transaction = session.beginTransaction();
+		session.update(grocery);
+		System.out.println(grocery);
+		transaction.commit();
+	}
+	@DeleteMapping("Deletegrocery/{proid}")
+	Grocery Deletegrocery(@PathVariable int proid ) {
+		Session session = factory.openSession();
+		Grocery grocery = session.load(Grocery.class, proid);
+		Transaction transaction = session.beginTransaction();
+		session.delete(grocery);
+		System.out.println(grocery);
+		transaction.commit();
+		return grocery;
+	}
+}
